@@ -4,6 +4,7 @@ set tabstop=4
 set cindent shiftwidth=4
 filetype plugin on
 set tags+=~/.vim/systags
+
 call plug#begin('~/.vim/plugged')
  Plug 'danilamihailov/vim-tips-wiki'
  Plug 'neoclide/coc.nvim', {'branch':'release'}
@@ -13,7 +14,6 @@ call plug#begin('~/.vim/plugged')
  Plug 'vimwiki/vimwiki'
  Plug 'scrooloose/nerdtree'
  Plug 'fatih/vim-go'
-
 call plug#end()
 let g:deoplete#enable_at_startup = 1
 if !exists('g:necovim#complete_functions')
