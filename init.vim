@@ -11,6 +11,9 @@ call plug#begin('~/.vim/plugged')
  Plug 'Shougo/deoplete.vim', { 'do': ':UpdateRemotePlugins'}
  Plug 'Shougo/neco-vim'
  Plug 'vimwiki/vimwiki'
+ Plug 'scrooloose/nerdtree'
+ Plug 'fatih/vim-go'
+
 call plug#end()
 let g:deoplete#enable_at_startup = 1
 if !exists('g:necovim#complete_functions')
@@ -29,5 +32,9 @@ let g:necovim#complete_functions.Ref = 'ref#complete'
 map <F12> :edit $MYVIMRC <CR>
 map <C-Space> <C-W>w
 nmap <ESC> :w <CR> :source % <CR>
-
+map ` :NERDTree<CR>
+map <UP> <C-W>+ 
+map <DOWN> <C-W>-
+map <LEFT> <C-W><S->>
+map <RIGHT> <C-W><S-<>
 
