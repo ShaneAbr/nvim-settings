@@ -4,11 +4,7 @@ set tabstop=4
 set cindent shiftwidth=4
 filetype plugin on
 set tags+=~/.vim/systags
-"color scheme
-runtime $XDG_CONFIG_HOME/nvim/awesome.vim
-
-
-call Awesome()
+colorscheme Awesome 
 
 call plug#begin('~/.vim/plugged')
  Plug 'danilamihailov/vim-tips-wiki'
@@ -33,7 +29,6 @@ endif
 let g:necovim#complete_functions.Ref = 'ref#complete'
 " Change clang binary path
 "call deoplete#custom#var('clangx', 'clang_binary', '/usr/local/bin/clang')
-
 " Change clang options
 "call deoplete#custom#var('clangx', 'default_c_options', '')
 "call deoplete#custom#var('clangx', 'default_cpp_options', '')
